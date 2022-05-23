@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutAngularComponent } from './about-angular/about-angular.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AppComponent } from './app.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
@@ -22,16 +24,20 @@ const routes: Routes = [
   },
   {
     path:'About',
-    component:AboutUsComponent
+    component:AboutUsComponent,
+    children:[
+      {path:'about-me', component:AboutMeComponent},
+      {path:'about-ng', component:AboutAngularComponent}
+    ]
   },
   {
-    path:'user/:id',
+    path:'users/:id',
     component:UsersComponent
   },
-  {
-    path:'**',
-    component:WildCardPageComponent
-  }
+  // {
+  //   path:'**',
+  //   component:WildCardPageComponent
+  // }
 ];
 
 @NgModule({

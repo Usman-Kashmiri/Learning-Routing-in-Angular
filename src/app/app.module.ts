@@ -8,6 +8,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { UsersComponent } from './users/users.component';
 import { WildCardPageComponent } from './wild-card-page/wild-card-page.component';
 import { HomeComponent } from './home/home.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { AboutAngularComponent } from './about-angular/about-angular.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { HomeComponent } from './home/home.component';
     AboutUsComponent,
     UsersComponent,
     WildCardPageComponent,
-    HomeComponent
+    HomeComponent,
+    AboutMeComponent,
+    AboutAngularComponent
   ],
   imports: [
     BrowserModule,

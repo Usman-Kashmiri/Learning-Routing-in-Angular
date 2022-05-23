@@ -1,6 +1,7 @@
 ul a {
     color: rgb(163, 5, 255);
     font-size: 1.5rem;
+    margin-bottom: 12px;
     transition: .5s all;
     -webkit-transition: .5s all;
     -moz-transition: .5s all;

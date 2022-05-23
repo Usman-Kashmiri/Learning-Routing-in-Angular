@@ -1,14 +1,23 @@
-<ul class="usersList">
-    <a routerLink="user/1">
-        <li>M. Usman</li>
+<ul *ngFor="let user of users">
+    <li>
+        Name: {{user.name}}
+    </li>
+    <li>
+        Age: {{user.age}}
+    </li>
+    <li>
+        Email: {{user.email}}
+    </li>
+</ul>
+
+<br><br>
+<ul>
+    <a routerLink="about-me">
+        <li>About Me</li>
     </a>
-    <a routerLink="user/2">
-        <li>M. Yasir</li>
-    </a>
-    <a routerLink="user/3">
-        <li>Abdul Rafay</li>
-    </a>
-    <a routerLink="user/4">
-        <li>Kanshif</li>
+    <a routerLink="about-ng">
+        <li>What is this Angular thing?</li>
     </a>
 </ul>
+
+<router-outlet></router-outlet>

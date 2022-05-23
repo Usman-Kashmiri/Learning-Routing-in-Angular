@@ -8,7 +8,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class UsersComponent implements OnInit {
 
-  userId:any
+  userId:any='';
 
   constructor(private router:ActivatedRoute) { }
 
