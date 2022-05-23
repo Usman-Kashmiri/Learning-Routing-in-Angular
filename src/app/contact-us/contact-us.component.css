@@ -1,0 +1,84 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25PX;
+    align-items: center;
+    padding: 50px;
+    box-shadow: 0px 0px 30px -8px black;
+    border-radius: 12px;
+  }
+  
+  .form-container .row-1 {
+    display: flex;
+    column-gap: 30px;
+    width: 100%;
+  }
+  
+  .row-1 div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+  
+  .form-container h2 {
+    font-size: 2.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #5456f8;
+  }
+  
+  .form-container .row-2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .form-container .input-field {
+    width: auto;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 8px 4px;
+  }
+  
+  .form-container .input-field:focus {
+    border: 1px solid #5456f8;
+  
+  }
+  
+  #message {
+    resize: vertical;
+  }
+  
+  .form-container .row-2 input {
+    margin-bottom: 20px;
+  }
+  
+  .form-container label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .form-container .row-2 label {
+    margin-bottom: 10px;
+  }
+  
+  .form-container .btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #5456f8;
+    border: none;
+    color: white;
+    border-radius: 5px;
+  }

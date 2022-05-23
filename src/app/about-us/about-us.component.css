@@ -1,0 +1,13 @@
+ul a {
+    color: rgb(163, 5, 255);
+    font-size: 1.5rem;
+    transition: .5s all;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    -ms-transition: .5s all;
+    -o-transition: .5s all;
+}
+
+  ul a:hover {
+    color: rgb(101, 21, 148);
+}
