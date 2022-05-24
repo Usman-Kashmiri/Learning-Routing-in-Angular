@@ -24,4 +24,14 @@
 
 <router-outlet></router-outlet>
 
+<br>
 
+<h2>Data from an Api</h2>
+
+<br>
+
+<ul>
+    <li *ngFor="let user of userData">
+        {{user.name | uppercase}} -- {{user.age}} -- {{user.email}}
+    </li>
+</ul>

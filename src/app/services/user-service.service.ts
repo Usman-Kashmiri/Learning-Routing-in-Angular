@@ -1,11 +1,18 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserServiceService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+
+  Url = 'http://localhost:3000/users';
+
+  getApiData() {
+    return this.http.get(this.Url);
+  }
 
   usersData() {
     return [
